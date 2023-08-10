@@ -31,12 +31,12 @@ This dataset contains a number of components that are outlined here. This includ
 the development of each component.
 
 # Dataset collection summary and their sources
-- [Countries](Countries/readme.md) - Australia plus surrounding countries at 1:10M scale. Use this for overview maps, or as a basic coastline. Allows filtering out of surrounding countries.
-- [Land](Land/readme.md) - Same as the Counties, but land only. Has scaling attribute that allows small features to be removed.
-- [Cities](Cities/readme.md) - 21 Cities along the Queensland coastline. Selected location based on existing eReefs visualisation maps and other GBR maps. 
-- [Basins](Basins/readme.md) - Drainage basins (catchments) adjacent to the Great Barrier Reef along the eastern Queensland coastline. 
-- [Rivers](Rivers/readme.md) - Rivers that drain along the Queensland eastern coast. 
-- [Reefs](Reefs/readme.md) - Boundaries of reefs in GBR, Torres Strait and Coral Sea. In the Coral Sea it contains the atoll platform boundaries rather than the individual reefs. 
+- [Countries](layers/Countries/readme.md) - Australia plus surrounding countries at 1:10M scale. Use this for overview maps, or as a basic coastline. Allows filtering out of surrounding countries.
+- [Land and Basins](layers/Land-and-Basins/readme.md) - This layer contains both Queensland and PNG land areas, along with the river basins along the eastern Queensland coastline. This is an integrated layer that represents both the background land area and the river basins all in one layer. This layer saves having to map the land area, then overlay the river basins. In this way each polygon only needs to be rendered once. The goal of this layer is to optmise the rendering time of the eReefs base map. This dataset is made up from the Geoscience Australia Australia's River Basins 1997 dataset for the Queensland coastline and the eastern Queensland basins. PNG is copied from Natural Earth Data 10 m countries dataset.
+- [Cities](layers/Cities/readme.md) - 21 Cities along the Queensland coastline. Selected location based on existing eReefs visualisation maps and other GBR maps. 
+- [Basins](layers/Basins/readme.md) - Drainage basins (catchments) adjacent to the Great Barrier Reef along the eastern Queensland coastline. 
+- [Rivers](layers/Rivers/readme.md) - Rivers that drain along the Queensland eastern coast. 
+- [Reefs](layers/Reefs/readme.md) - Boundaries of reefs in GBR, Torres Strait and Coral Sea. In the Coral Sea it contains the atoll platform boundaries rather than the individual reefs. 
 - Clip regions - Polygons for clipping eReefs data to the GBR. Also contains approximate polygons for Coral Sea, Torres Strait, PNG and New Caledonia. This was created principally for setting the region attribute for the Reefs dataset, but was made available as it is useful for clipping eReefs data to the GBR for plotting purposes. Its creation is described in [Reefs](Reefs/readme.md)
 
 # Attribution
@@ -56,25 +56,30 @@ If you are using just one of the layers from this dataset collection and you hav
     Lawrey, E. (2023). eReefs Basemap - GIS layers Reefs, Rivers, Cities, Countries (AIMS) [Data set]. eAtlas. https://doi.org/10.26274/g6sn-s290 
 
 ## Source data licensing
-- [Countries](Countries/readme.md) - [Natural Earth Data 1:10m Cultural Vectors - Admin 0 – Countries](https://www.naturalearthdata.com/downloads/10m-cultural-vectors/) dataset. 
- Source License: Public domain
- Source Attribution: Natural Earth
-- [Land](Land/readme.md) - [Natural Earth Data 1:10m Physical Vectors - Land](https://www.naturalearthdata.com/downloads/10m-physical-vectors/)
+- Countries - [Natural Earth Data 1:10m Cultural Vectors - Admin 0 – Countries](https://www.naturalearthdata.com/downloads/10m-cultural-vectors/) dataset. 
  Source License: Public domain
  Source Attribution: Natural Earth
 - Cities - 21 Cities along the Queensland coastline. 18 Locations [Natural Earth Data 1:10m Cultural Vectors - Populated places](https://www.naturalearthdata.com/downloads/10m-cultural-vectors/) dataset, others added manually from satellite imagery.
  Source License: Public domain
  Source Attribution: Natural Earth
-- [Basins](Basins/readme.md) - Derived from [Geoscience Australia Australia's River Basins 1997 dataset](https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/42343). It is a subset and reprojection.
+- Land and Basins: This dataset is made up from the [Geoscience Australia Australia's River Basins 1997 dataset](https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/42343) for the Queensland coastline and the eastern Queensland basins. PNG is copied from Natural Earth Data 10 m countries dataset.
  Source License: Creative Commons Attribution 4.0 International Licence
  Source Attribution: (C) Copyright Commonwealth of Australia  (Geoscience Australia) 1997
  Source Citation: 1997. Australia's River Basins 1997. Geoscience Australia, Canberra. https://pid.geoscience.gov.au/dataset/ga/42343
-- [Rivers](Rivers/readme.md) - This is a subset of the [Geoscience Australia Geodata Topo 5 M 2004](https://pid.geoscience.gov.au/dataset/ga/42343) basins data. 
+ 
+ Natural Earth Data: 
+ Source License: Public domain
+ Source Attribution: Natural Earth
+- Basins - Derived from [Geoscience Australia Australia's River Basins 1997 dataset](https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/42343). It is a subset and reprojection.
+ Source License: Creative Commons Attribution 4.0 International Licence
+ Source Attribution: (C) Copyright Commonwealth of Australia  (Geoscience Australia) 1997
+ Source Citation: 1997. Australia's River Basins 1997. Geoscience Australia, Canberra. https://pid.geoscience.gov.au/dataset/ga/42343
+- Rivers - This is a subset of the [Geoscience Australia Geodata Topo 5 M 2004](https://pid.geoscience.gov.au/dataset/ga/42343) basins data. 
  Source License: Creative Commons Attribution 4.0 International Licence
  Source Attribution: (C) Copyright Commonwealth of Australia  (Geoscience Australia) 2004
  Source Citation: 2004. GEODATA TOPO 5M 2004. Geoscience Australia, Canberra. https://pid.geoscience.gov.au/dataset/ga/61114
 2004. GEODATA TOPO 5M 2004. Geoscience Australia, Canberra. https://pid.geoscience.gov.au/dataset/ga/61114
-- [Reefs](Reefs/readme.md) - Merging of GBR Features (GBRMPA), TS Features (AIMS) and CS Features (AIMS), followed by simplification. 
+- Reefs - Merging of GBR Features (GBRMPA), TS Features (AIMS) and CS Features (AIMS), followed by simplification. 
  - GBR Features and TS Features already combined: Lawrey, E. P., Stewart M. (2016) Complete Great Barrier Reef (GBR) Reef and Island Feature boundaries including Torres Strait (NESP TWQ 3.13, AIMS, TSRA, GBRMPA) [Dataset]. Australian Institute of Marine Science (AIMS), Torres Strait Regional Authority (TSRA), Great Barrier Reef Marine Park Authority [producer]. eAtlas Repository [distributor]. https://eatlas.org.au/data/uuid/d2396b2c-68d4-4f4b-aab0-52f7bc4a81f5
   Source License: Creative Commons Attribution 3.0
   Source Attribution: Australian Institute of Marine Science, Great Barrier Reef Marine Park Authority

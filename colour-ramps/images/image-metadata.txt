@@ -1,0 +1,3 @@
+profile1.png
+cm_MATLAB_gray256.png
+From: https://peterkovesi.com/projects/colourmaps/colourmaptestimage.html

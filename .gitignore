@@ -1,0 +1,17 @@
+layers/Basins/src-data/
+layers/Cities/src-data/
+layers/Countries/src-data/
+layers/Land-and-Basins/src-data/
+layers/Land-and-Basins/working/
+layers/Reefs/src-data/
+layers/Rivers/src-data/
+!layers/Reefs/src-data/readme.md
+layers/Reefs/working/
+/public/
+!/public/readme.md
+__pycache__/
+source/
+temp/
+~$*
+export/
+.idea/

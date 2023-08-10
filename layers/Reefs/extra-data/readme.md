@@ -1,0 +1,1 @@
+This folder contains datasets that were created for this dataset such as GBR_AIMS_eReefs-basemap_Clip-regions.shp or were sourced directly as they are not yet available publicly (CS_AIMS_Coral-Sea-Features_Reef-platform-100m_MSL_STAGE11.shp)

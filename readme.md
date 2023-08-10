@@ -30,6 +30,10 @@ in the future.
 This dataset contains a number of components that are outlined here. This includes links to other documents that outline
 the development of each component.
 
+# Maps that use this basemap dataset
+These plots use this basemap:
+- [eReefs Scienctific Consensus WQ plots 2023](https://github.com/open-AIMS/ereefs-scientific-consensus-wq-plots-2023)
+
 # Dataset collection summary and their sources
 - [Countries](layers/Countries/readme.md) - Australia plus surrounding countries at 1:10M scale. Use this for overview maps, or as a basic coastline. Allows filtering out of surrounding countries.
 - [Land and Basins](layers/Land-and-Basins/readme.md) - This layer contains both Queensland and PNG land areas, along with the river basins along the eastern Queensland coastline. This is an integrated layer that represents both the background land area and the river basins all in one layer. This layer saves having to map the land area, then overlay the river basins. In this way each polygon only needs to be rendered once. The goal of this layer is to optmise the rendering time of the eReefs base map. This dataset is made up from the Geoscience Australia Australia's River Basins 1997 dataset for the Queensland coastline and the eastern Queensland basins. PNG is copied from Natural Earth Data 10 m countries dataset.

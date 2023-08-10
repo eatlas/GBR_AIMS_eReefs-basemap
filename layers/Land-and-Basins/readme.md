@@ -5,6 +5,8 @@ This dataset is made up from the [Geoscience Australia Australia's River Basins 
 
 In this we only retain the subset of basins in the north east coast of Queensland. We also reproject the basins into WGS4326 for compatibility with the GeoJSON output.
 
+![Map showing preview of GBR_AIMS_eReefs-basemap_Land-and-Basins dataset](public/Land-and-Basins-preview-map.jpeg)
+
 # Tools
  - Python to download source data from GA. This can be done manually with a browser.
  - QGIS to manipulate the data.

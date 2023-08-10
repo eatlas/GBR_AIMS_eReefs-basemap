@@ -3,6 +3,8 @@ This dataset contains the rivers that flow into the GBR from the basins on the e
 
 This dataset is derived from the [Rivers and coastline: Geoscience Australia Geodata Topo 5 M 2004](https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/61114) dataset. We simply remove all rivers that don't flow into the north east coastline.
 
+![Map showing preview of GBR_AIMS_eReefs-basemap_GA-topo5m-drainage dataset](public/Rivers-preview-map.jpeg)
+
 # Tools to reproduce this dataset
 - QGIS
 

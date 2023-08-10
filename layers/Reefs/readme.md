@@ -1,21 +1,15 @@
-# GBR-TS-CS_AIMS_Reef-boundaries-1M.md
+# GBR_AIMS_eReefs-basemap_Reefs and GBR_AIMS_eReefs-basemap_Clip-regions
 This documents the creation of the simplified version of the reef boundaries dataset. This dataset is suitable for generating low detail maps of the Queensland and Coral Sea waters. The reef boundary has been simplified to a detail level of 1:1M and the file size is approximately 10x smaller than the original reef boundary dataset.
 
-Simplifying the GBR reef matrix is challenging because it is made up from thousands of small features. Standard 
-simplification uses two techniques: reducing the number of vertices and removing small polygons. Unfortunately 
-some areas in the GBR are made up from hundreds of small polygons. Applying conventional simplification to these 
-results in a poor result, with all the polygons being removed, leaving blank areas, or lots of crude triangular 
+![Map showing preview of GBR_AIMS_eReefs-basemap_GA-River-Basins-1997 dataset](public/Reefs-Preview-map.jpeg)
+
+Simplifying the GBR reef matrix is challenging because it is made up from thousands of small features. Standard  simplification uses two techniques: reducing the number of vertices and removing small polygons. Unfortunately some areas in the GBR are made up from hundreds of small polygons. Applying conventional simplification to these results in a poor result, with all the polygons being removed, leaving blank areas, or lots of crude triangular 
 polygons. 
 
-To overcome some of these limitations we use an approach that maintains the visual appeal of the reefs, even with high 
-levels of simplification. In this approach we rasterise the reef matrix (turn it into a pixel based image), then apply 
-a pixel growth (spatial maximum) operation to join neighbouring reefs that are very close, then a pixel shrink (spatial 
-minimum) operation to bring them back to their original shape, except where  two reefs were merged. This process results 
-in small neighbouring polygons to merge together. We then convert the rastered result back to polygons then apply 
-conventional polygon simplication to the result. This process allows high compression of the original polygon features, 
-but results in a polygon map that no longer has a one-to-one relationship between reefs to polygons as some reefs become 
-merged in the simplification process. This dataset is therefore only suitable for creating a visual map, not for 
-analysis requiring boundaries of individual reefs.
+To overcome some of these limitations we use an approach that maintains the visual appeal of the reefs, even with high levels of simplification. In this approach we rasterise the reef matrix (turn it into a pixel based image), then blur the image to merge clusters of pixels together, then apply a threshold to turn it back to a mask. We then convert the rastered result back to polygons then apply conventional polygon simplication to the result. This process allows high compression of the original polygon features, but results in a polygon map that no longer has a one-to-one relationship between reefs to polygons as some reefs become merged in the simplification process. This dataset is therefore only suitable for creating a visual map, not for analysis requiring boundaries of individual reefs.
+
+![Map showing the reef data before and after simplification](images/Reef-simplication-diagram.png)
+
 
 # Source datasets
 This dataset is based on the following datasets:

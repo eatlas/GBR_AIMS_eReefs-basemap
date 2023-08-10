@@ -1,6 +1,8 @@
 # GBR_AIMS_eReefs-basemap_GA-River-Basins-1997
 This is a subset of the original [Geoscience Australia Australia's River Basins 1997 dataset](https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/42343), optimised for the eReef basemap. In this we only retain the subset of basins in the north east coast of Queensland. We also reproject the basins into WGS4326 for compatibility with the GeoJSON output.
 
+![Map showing preview of GBR_AIMS_eReefs-basemap_GA-River-Basins-1997 dataset](public/Basins-preview-map.jpeg)
+
 # Tools
  - Python to download source data from GA. This can be done manually with a browser.
  - QGIS to manipulate the data.

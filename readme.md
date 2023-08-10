@@ -45,19 +45,21 @@ These plots use this basemap:
 
 # Attribution
 When this dataset collection is used largely as a full collection it should attributed something similar to:
-    Data: eReefs basemap (AIMS) 2023
+
+- Data: eReefs basemap (AIMS) 2023
+
 This attribution is much shorter than attributing all the source datasets. People can then find the source datasets from this documentation, as well as details of the processing that we did. 
 
 If you are using just one of the layers from this dataset collection and you have space then you should try and provide attribution to the source data. It is still important to attribute this dataset (eReefs basemap) to ensure that the full provenance is retained. For example:
-    Data: eReefs basemap (AIMS) 2023 - Countries - Natural Earth
-    Data: eReefs basemap (AIMS) 2023 - Land - Natural Earth
-    Data: eReefs basemap (AIMS) 2023 - Cities - Natural Earth
-    Data: eReefs basemap (AIMS) 2023 - Basins - Aus River Basins 1997 (C) Copyright Commonwealth of Australia  (Geoscience Australia)
-    Data: eReefs basemap (AIMS) 2023 - Rivers - Geodata Topo 5M (C) Copyright Commonwealth of Australia (Geoscience Australia) 2004
-    Data: eReefs basemap (AIMS) 2023 - Reefs - Torres Strait Features, Coral Sea Features: Australian Institute of Marine Science, GBR Features: Great Barrier Reef Marine Park Authority
+ - Data: eReefs basemap (AIMS) 2023 - Countries - Natural Earth
+ - Data: eReefs basemap (AIMS) 2023 - Land - Natural Earth
+ - Data: eReefs basemap (AIMS) 2023 - Cities - Natural Earth
+ - Data: eReefs basemap (AIMS) 2023 - Basins - Aus River Basins 1997 (C) Copyright Commonwealth of Australia  (Geoscience Australia)
+ - Data: eReefs basemap (AIMS) 2023 - Rivers - Geodata Topo 5M (C) Copyright Commonwealth of Australia (Geoscience Australia) 2004
+ - Data: eReefs basemap (AIMS) 2023 - Reefs - Torres Strait Features, Coral Sea Features: Australian Institute of Marine Science, GBR Features: Great Barrier Reef Marine Park Authority
 
 ## Citation:
-    Lawrey, E. (2023). eReefs Basemap - GIS layers Reefs, Rivers, Cities, Countries (AIMS) [Data set]. eAtlas. https://doi.org/10.26274/g6sn-s290 
+Lawrey, E. (2023). eReefs Basemap - GIS layers Reefs, Rivers, Cities, Countries (AIMS) [Data set]. eAtlas. https://doi.org/10.26274/g6sn-s290 
 
 ## Source data licensing
 - Countries - [Natural Earth Data 1:10m Cultural Vectors - Admin 0 – Countries](https://www.naturalearthdata.com/downloads/10m-cultural-vectors/) dataset. 

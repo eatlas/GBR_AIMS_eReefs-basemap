@@ -3,6 +3,8 @@ This dataset contains the locations of cities to include on maps at various scal
 
 The list of cities to include in the dataset was based on the existing eReefs mapping products, along with some example other maps of the region. The goal was to keep the list of cities quite low to reduce map clutter.
 
+![Map showing preview of GBR_AIMS_eReefs-basemap_Cities_2023 dataset](public/Cities-preview-map.jpeg)
+
 # Tools and setup to reproduce
  - Python to download Natural Earth Data Populated places. This can be done manually with a browser.
  - QGIS to join the list of cities with the Natural Earth Data.
@@ -37,5 +39,5 @@ The Natural Earth Data Populated Places doesn't contain all the cities required 
 
 # Data Dictionary
 - name: Name of the city, suitable for a map label
-- ereefs_scle: Which zoom level of eReefs maps the city should appear on the maps. If blank then this means it doesn't appear in any maps.
+- ereefs_scale: Which zoom level of eReefs maps the city should appear on the maps. If blank then this means it doesn't appear in any maps.
 - scs_scale: Which cities to show on the Scientific Consensus Statement map. This corresponds to a map of the whole of the GBR.
